@@ -29,7 +29,27 @@ h1, h2 {
 
 .box2 div {
   width: 100px;
-  /* height: 100px; */
+  height: 200px;
   background-color: aqua;
   border: 1px solid black;
+}
+
+.box3 {
+  display: flex;
+  align-items: flex-start;
+  height: 200px;
+}
+
+.box3 div {
+  width: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.box3>*:first-child {
+  align-self: stretch;
+}
+
+.box3 .selected {
+  align-self: center;
 }
